@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\HOXUANPHU\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.11\\cores\\esp32"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\HOXUANPHU\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.11\\variants\\doitESP32devkitV1"
+  },
+  {
+    "Sourcefile": "C:\\Kidscode_test\\KidsCode\\storyHex\\sketch\\KidscodeSketch.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

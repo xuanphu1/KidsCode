@@ -1,0 +1,136 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="tW%Kxks20e4-e:k[}RN]" x="107" y="-35">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="Arduino_robot" id="LUet`DJ(:jv}14#dg,)X" x="151" y="72">
+    <next>
+      <block type="variables_set" id="vKQ=3OLvML0_x:8+s27m">
+        <field name="VAR">bluetooth</field>
+        <value name="VALUE">
+          <block type="kcbot_Serial" id="6rPd1noQA5T.lUPz`MpT"></block>
+        </value>
+        <next>
+          <block type="controls_if" id="J6eXrQ#J5Y`G6lBRUL*s">
+            <value name="IF0">
+              <block type="logic_compare" id="LvgJY9{k#:4tvTd/KZv6">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="9V4/)jA30c_PR9NfA]Ks">
+                    <field name="VAR">bluetooth</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="textchar" id="p!FO(DHyIJ9RCb5;iZ|1">
+                    <field name="TEXT">F</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="Arduino_robot_run_forward" id="eh/iT?-CMrT;eXPU1+JT">
+                <field name="MOTOR">1</field>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id=":xt=tA6mz3_JKyqEGYxy">
+                <value name="IF0">
+                  <block type="logic_compare" id=":SJ]HlwX))a6YI.DoJU{">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="hi.Dgcbvt~WpWQ4TnlWK">
+                        <field name="VAR">bluetooth</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="textchar" id=")},8-rH?M}uh2D/jwun{">
+                        <field name="TEXT">B</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="Arduino_robot_run_forward" id="r.TdkD4ox,:B1)Yu)(NQ">
+                    <field name="MOTOR">2</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="O_o`V2[kBI[+6n0rD^Tg">
+                    <value name="IF0">
+                      <block type="logic_compare" id="5kLBLHjQL4Fi6hNHmCGc">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="/!qw^HO-j0j~q)eG4hgK">
+                            <field name="VAR">bluetooth</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="textchar" id="O)j/,5+:kTvID;Cj4mno">
+                            <field name="TEXT">L</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="Arduino_robot_run_forward" id="~G!.xnA]d_X.u@o[N80K">
+                        <field name="MOTOR">3</field>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="*[ky|_|Q-zDlX(RuDpZ*">
+                        <value name="IF0">
+                          <block type="logic_compare" id="FNV}-u@o#?[bkI*fGJbH">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="variables_get" id="O5`LJNkq68OXZmwaO]hR">
+                                <field name="VAR">bluetooth</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="textchar" id="j~[h].9yQ}K#@^FHSC9m">
+                                <field name="TEXT">R</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="Arduino_robot_run_forward" id="c|3wLa*z)ICN0~hN~9hF">
+                            <field name="MOTOR">4</field>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="rl~o|[Iy[k.)H%(ti4TZ">
+                            <value name="IF0">
+                              <block type="logic_compare" id="#/1gn)m:xN7NFOx*}(ly">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="`4dzB2fFJYE5Q=Tyq?e[">
+                                    <field name="VAR">bluetooth</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="textchar" id="ud]`aRg?oQ=MvNHqj1gu">
+                                    <field name="TEXT">S</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="Arduino_robot_run_forward" id="s}BKkBjq}ZmF6^cWgE,2">
+                                <field name="MOTOR">0</field>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

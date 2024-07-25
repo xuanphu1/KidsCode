@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="loop_forever" id="_M0ZkJz8F4(i/i/%+@LO" x="242" y="-216">
+    <statement name="DO">
+      <block type="serial_python_print" id="UakI^W|oo{84|U4:_])=">
+        <field name="SERIAL_ID">Serial</field>
+        <value name="CONTENT">
+          <block type="text" id="pybAeMF}Dam)t)P,81c+">
+            <field name="TEXT">pin 34:</field>
+          </block>
+        </value>
+        <next>
+          <block type="serial_python_print" id="7.zVI,sq;|M?2Iw=CeE=">
+            <field name="SERIAL_ID">Serial</field>
+            <value name="CONTENT">
+              <block type="Python_analog_read" id="WE^IO_^wHT:-?q?.%bOA">
+                <field name="Pinanalogin">34</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_python_print" id="IYQ:3s`ic[PJCpdW:HT]">
+                <field name="SERIAL_ID">Serial</field>
+                <value name="CONTENT">
+                  <block type="text" id="0LaT^xoV{zyEyJN:l9?v">
+                    <field name="TEXT">pin 35: </field>
+                  </block>
+                </value>
+                <next>
+                  <block type="serial_python_print" id="eFz}HsNYy-Z|t;P8^E8Z">
+                    <field name="SERIAL_ID">Serial</field>
+                    <value name="CONTENT">
+                      <block type="Python_analog_read" id="^Qicahqo))Si(p;^IIDp">
+                        <field name="Pinanalogin">35</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="?h]QU+29)`;NwFNCP,7N">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="dEx--F7}G3gdS*78dNyw">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

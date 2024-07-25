@@ -1,0 +1,32 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="loop_forever" id="2Ogh]W+DIr(z;540Anmp" x="129" y="-179">
+    <statement name="DO">
+      <block type="serial_python_print" id="VMCwT}LqBXJnuct=^u?Y">
+        <field name="SERIAL_ID">Serial</field>
+        <value name="CONTENT">
+          <block type="Python_ultrasonic" id="[cyau:r+vLniR{r~B?E4">
+            <value name="trig">
+              <shadow type="math_number" id="Eu/qzi|rArS[fex4qn0y">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <value name="echo">
+              <shadow type="math_number" id="MuQ]8%+v/^tdhU%n(%Ea">
+                <field name="NUM">15</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="A8I~1?_!TjsqzklSSQ*M">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="B.)xgDqpVcW@t,j10saY">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

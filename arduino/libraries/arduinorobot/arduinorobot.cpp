@@ -1,0 +1,94 @@
+#include "arduinorobot.h"
+arduinorobot::arduinorobot(bool msg)
+{
+  _msg=msg;
+}
+void arduinorobot::cauhinh()
+{
+   for(int i=4;i<8;i++)
+    {
+    pinMode(i,OUTPUT);
+    }
+  }
+void arduinorobot::motor(int b,int a)
+{
+  if(b==0){
+    if(a==0)
+    {
+    digitalWrite(4,LOW);
+    digitalWrite(5,LOW);
+    }
+    if(a==1)
+    {
+    digitalWrite(4,HIGH);
+    digitalWrite(5,LOW);
+    }  
+    if(a==2)
+    {
+    digitalWrite(4,LOW);
+    digitalWrite(5,HIGH);
+    }
+    }
+  if(b==1)
+  {
+    if(a==0)
+    {
+    digitalWrite(6,LOW);
+    digitalWrite(7,LOW);
+    }
+    if(a==1)
+    {
+    digitalWrite(6,HIGH);
+    digitalWrite(7,LOW);
+    }  
+    if(a==2)
+    {
+    digitalWrite(6,LOW);
+    digitalWrite(7,HIGH);
+    }
+    }
+  }
+void arduinorobot::run(int a)
+{
+  if(a==0)
+  {
+    digitalWrite(6,LOW);
+    digitalWrite(7,LOW);
+    digitalWrite(6,LOW);
+    digitalWrite(7,LOW);
+    }
+  if(a==1)
+  {
+   digitalWrite(4,HIGH);
+   digitalWrite(5,LOW);
+   digitalWrite(6,HIGH);
+   digitalWrite(7,LOW);
+    }
+  if(a==2)
+  {
+    digitalWrite(4,LOW);
+    digitalWrite(5,HIGH);
+    digitalWrite(6,LOW);
+    digitalWrite(7,HIGH);
+    digitalWrite(4,LOW);
+    digitalWrite(5,HIGH);
+    digitalWrite(6,HIGH);
+    digitalWrite(7,LOW);
+  }
+  if(a==3)
+  {
+    digitalWrite(4,LOW);
+    digitalWrite(5,HIGH);
+    digitalWrite(6,LOW);
+    digitalWrite(7,HIGH);
+    }
+    if(a==4)
+  {
+    digitalWrite(4,LOW);
+    digitalWrite(5,HIGH);
+    digitalWrite(6,HIGH);
+    digitalWrite(7,LOW);
+    }  
+  }
+//Make by Kidscode STEM
+//Website: https://kidscode.edu.vn/
