@@ -1,0 +1,211 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="tW%Kxks20e4-e:k[}RN]" x="128" y="41">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="robocarv2" id="/TQ7]C]EI~z{O.0J|TH*" x="137" y="127">
+    <next>
+      <block type="variables_set" id="vKQ=3OLvML0_x:8+s27m">
+        <field name="VAR">bluetooth</field>
+        <value name="VALUE">
+          <block type="kcbot_Serial" id="6rPd1noQA5T.lUPz`MpT"></block>
+        </value>
+        <next>
+          <block type="controls_if" id="J6eXrQ#J5Y`G6lBRUL*s">
+            <value name="IF0">
+              <block type="logic_compare" id="LvgJY9{k#:4tvTd/KZv6">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="9V4/)jA30c_PR9NfA]Ks">
+                    <field name="VAR">bluetooth</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="textchar" id="p!FO(DHyIJ9RCb5;iZ|1">
+                    <field name="TEXT">F</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="kcbot_motor" id="QEe_E|u;*U,kZC;?aHe4">
+                <field name="MOTOR">0</field>
+                <value name="SPEED">
+                  <block type="math_number" id="GCX=Yf`4xlLUqj=}jo(Y">
+                    <field name="NUM">200</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="kcbot_motor" id="EUJ_00yf-ygjVTDLoTE,">
+                    <field name="MOTOR">1</field>
+                    <value name="SPEED">
+                      <block type="math_number" id="StROGJ*trZTFte@x+qHM">
+                        <field name="NUM">200</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id=":xt=tA6mz3_JKyqEGYxy">
+                <value name="IF0">
+                  <block type="logic_compare" id=":SJ]HlwX))a6YI.DoJU{">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="hi.Dgcbvt~WpWQ4TnlWK">
+                        <field name="VAR">bluetooth</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="textchar" id=")},8-rH?M}uh2D/jwun{">
+                        <field name="TEXT">B</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="kcbot_motor" id="D,B[/l~z|kjaQnduCJb^">
+                    <field name="MOTOR">0</field>
+                    <value name="SPEED">
+                      <block type="math_number" id="jnt?=15[9x7;XQ]3Ea8P">
+                        <field name="NUM">-200</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="kcbot_motor" id="lsM9~fHX8WU=)8zx-V6+">
+                        <field name="MOTOR">1</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="kq[4.y!Eh2,}7i0{/{1E">
+                            <field name="NUM">-200</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="O_o`V2[kBI[+6n0rD^Tg">
+                    <value name="IF0">
+                      <block type="logic_compare" id="5kLBLHjQL4Fi6hNHmCGc">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="/!qw^HO-j0j~q)eG4hgK">
+                            <field name="VAR">bluetooth</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="textchar" id="O)j/,5+:kTvID;Cj4mno">
+                            <field name="TEXT">L</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="kcbot_motor" id="{EEYP,YH|Rh-~q/.#K/i">
+                        <field name="MOTOR">0</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="cMGCHk,|VZh,(X0Fmgc=">
+                            <field name="NUM">-100</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_motor" id="-=m5G.n[]v/6I{MtEMAT">
+                            <field name="MOTOR">1</field>
+                            <value name="SPEED">
+                              <block type="math_number" id=")}r19~AVlM[*P*;HZQYD">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="*[ky|_|Q-zDlX(RuDpZ*">
+                        <value name="IF0">
+                          <block type="logic_compare" id="FNV}-u@o#?[bkI*fGJbH">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="variables_get" id="O5`LJNkq68OXZmwaO]hR">
+                                <field name="VAR">bluetooth</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="textchar" id="j~[h].9yQ}K#@^FHSC9m">
+                                <field name="TEXT">R</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="kcbot_motor" id="-{C#IloU|0Ur7Y2/l_jI">
+                            <field name="MOTOR">0</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="I2k^6e8g[psJ;2=Q*@]l">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="kcbot_motor" id="s*rb/^%H#)ZmLD/|05w6">
+                                <field name="MOTOR">1</field>
+                                <value name="SPEED">
+                                  <block type="math_number" id="S/Sni8ZV%GGIi?~0B6;9">
+                                    <field name="NUM">-100</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="rl~o|[Iy[k.)H%(ti4TZ">
+                            <value name="IF0">
+                              <block type="logic_compare" id="#/1gn)m:xN7NFOx*}(ly">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="`4dzB2fFJYE5Q=Tyq?e[">
+                                    <field name="VAR">bluetooth</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="textchar" id="ud]`aRg?oQ=MvNHqj1gu">
+                                    <field name="TEXT">S</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="kcbot_motor" id="qijATtNC^~W4[qL(!gk3">
+                                <field name="MOTOR">0</field>
+                                <value name="SPEED">
+                                  <block type="math_number" id="@I^+O[asPJ;%=LE+U+Ka">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="kcbot_motor" id=".AGK]a+2{u;khHFQ?OBl">
+                                    <field name="MOTOR">1</field>
+                                    <value name="SPEED">
+                                      <block type="math_number" id="4}TKp7yL|?./TE]@-o0^">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

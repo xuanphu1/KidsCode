@@ -1,0 +1,41 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="upDm_S?.R%3`v6qoDB@[" x="96" y="74">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="Arduino_robot" id="K9!Qg:)SMGbKw#Lo/{/`" x="94" y="129">
+    <next>
+      <block type="loop_forever" id="3LdpacnOS(de+_Y76c1_">
+        <statement name="DO">
+          <block type="serial_print" id="Krkr;97+eJRi/o^h`PZ%">
+            <field name="SERIAL_ID">Serial</field>
+            <field name="NEW_LINE">TRUE</field>
+            <value name="CONTENT">
+              <block type="Arduino_robot_ultrasonic" id="Oixu6ghX=rDb!^SLe_wq">
+                <value name="trig">
+                  <shadow type="math_number" id="AvT^:m::dsy,EE2xAV16">
+                    <field name="NUM">12</field>
+                  </shadow>
+                </value>
+                <value name="echo">
+                  <shadow type="math_number" id="CM5ZX.-2`vXa*q;{2fPW">
+                    <field name="NUM">11</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="time_delay" id="ggYlVuvt]|B-0mPdXE;:">
+                <value name="DELAY_TIME_MILI">
+                  <block type="math_number" id="YbwLw`@mocoQ[9k]61YR">
+                    <field name="NUM">1000</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

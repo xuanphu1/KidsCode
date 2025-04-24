@@ -1,0 +1,11 @@
+{
+  "arduino_exec_path": "arduino/arduino_debug.exe",
+  "arduino_application_path": "arduino/arduino",
+  "arduino_yaml_path": "arduino/arduino-cli.yaml",
+  "driver_ch340_path": "CH340/CH34x_Install_Windows_v3_4.EXE",
+  "arduino_board": "ESP32",
+  "arduino_serial_port": "COM10",
+  "sketch_name": "KidscodeSketch",
+  "sketch_directory": "",
+  "ide_load": "verify"
+}

@@ -1,0 +1,34 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="loop_forever" id="a8uJY{?D=tf/Wnd.WLTM" x="41" y="32">
+    <statement name="DO">
+      <block type="Python_run_out_put" id="]t]-QghNN~lW(f9?2F6o">
+        <field name="Pinout">32</field>
+        <field name="muc">1</field>
+        <next>
+          <block type="time_delay" id="3W0nq;Kg,`oQ}ow:nQuR">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="lA7KlUm-=slMZlj9orYj">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="Python_run_out_put" id="/MAA_-jD|n/f.IGo0}08">
+                <field name="Pinout">32</field>
+                <field name="muc">0</field>
+                <next>
+                  <block type="time_delay" id="RX6m]L4q1_P0`{H4j-t)">
+                    <value name="DELAY_TIME_MILI">
+                      <block type="math_number" id="uofW^vw8NKk0+aT/_~aC">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

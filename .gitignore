@@ -1,0 +1,5 @@
+appdata
+arduino/packages/
+arduino/staging/
+*.log
+dist/, *.exe, *.dmg, *.app, *.msi

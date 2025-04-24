@@ -1,0 +1,67 @@
+{
+  "name": "electron-serialport",
+  "version": "1.0.2",
+  "description": "A minimal Electron application with node serialport",
+  "main": "main.js",
+  "author": "",
+  "license": "CC0-1.0",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:serialport/electron-serialport.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.6.10",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2",
+    "express": "^4.19.2",
+    "fs-jetpack": "^5.1.0",
+    "python-shell": "^5.0.0",
+    "serialport": "^10.3.0",
+    "sudo-prompt": "^9.2.1",
+    "tableify": "^1.1.1",
+    "yaml": "^2.7.1"
+  },
+  "engines": {
+    "node": "18.16.1",
+    "npm": "9.5.1"
+  },
+  "build": {
+    "appId": "com.kidscode.kiduino",
+    "productName": "KidCode",
+    "directories": {
+      "output": "Application_KidsCode"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!appdata/",
+      "!arduino/packages/",
+      "!arduino/staging/",
+      "!Application_KidsCode/",
+      "!*.log"
+    ],
+    "extraFiles": [
+      "arduino/",
+      "KidscodeSketch/",
+      "storyHex/",
+      "CH340/"
+    ],
+    "asar": false,
+    "npmRebuild": true
+  }
+}

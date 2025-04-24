@@ -1,0 +1,166 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="robocarv2" id="hJVtyazKrrUJK**oQoI-" x="31" y="38">
+    <next>
+      <block type="variables_set" id="uB1(%a%mT2D.frDxm7WG">
+        <field name="VAR">Trung_binh_A6</field>
+        <comment pinned="true" h="80" w="160">Thông số lấy theo điều kiện thực tế</comment>
+        <value name="VALUE">
+          <block type="math_number" id="Ek0*Kn?Yb@f4*GB)`8}r">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="Ug0E!1}!`%fqYWerlu7z">
+            <field name="VAR">Trung_binh_A7</field>
+            <comment pinned="true" h="80" w="160">Thông số lấy theo điều kiện thực tế</comment>
+            <value name="VALUE">
+              <block type="math_number" id="=AIh.1#Kg_aJtg.:It-P">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="L8-cRn9]`??R1|]*{}Ue">
+                <mutation else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="m)!T9}z{F6f0sB~-F/ql">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="io_analogread" id="3R1;Bf)JJ:C@Cn[g44nq">
+                        <field name="PIN">A6</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="variables_get" id="9ap_|1fi;)jd.Y#/Ds:v">
+                        <field name="VAR">Trung_binh_A6</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_if" id="*-~NRLCQ!W4/FP,EB_Du">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="HB-ZHQ7C|n8DStdhY;ef">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block type="io_analogread" id="U4GcVZ1L|s54#*33(iJw">
+                            <field name="PIN">A7</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id="P-49~m_?r{[nYHt-kY?M">
+                            <field name="VAR">Trung_binh_A7</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="kcbot_motor" id="J*NUr2dM/@7%Wos^k^3a">
+                        <field name="MOTOR">0</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="s)Ks%/o=t1za@jVOx.YF">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_motor" id="nE9#z]x?g+TF!KA!M4.h">
+                            <field name="MOTOR">1</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="!o,@D:P[A2k9PeVqf=Pk">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="kcbot_motor" id="`{/g.nLUlL35wPCpNDhK">
+                        <field name="MOTOR">0</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="l8ZruJAdmjV|HtK}DGyc">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_motor" id="F9kyg[8cuYknsfO5clw?">
+                            <field name="MOTOR">1</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="~q};-1g#2=A8XoGmb[S2">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="controls_if" id=")T2=LH7oiFr-8yV~m=as">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="q#p^D8^q`8opz#pt(+sO">
+                        <field name="OP">LT</field>
+                        <value name="A">
+                          <block type="io_analogread" id="1`R/_O@.%R/7)*7_ua]~">
+                            <field name="PIN">A7</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="variables_get" id=",sVEuq[dlVQj!st}[AR!">
+                            <field name="VAR">Trung_binh_A7</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="kcbot_motor" id="]Y=ne}c4})b~.dRTWg+v">
+                        <field name="MOTOR">0</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="q#G-7czrnW6Vh)5Jh6##">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_motor" id="M`@!:T6yHWIwnOoZ6pxz">
+                            <field name="MOTOR">1</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="ON+#zvYJ!5onOB0~Ey^|">
+                                <field name="NUM">200</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="kcbot_motor" id="FQ`PO47}(BY8={a0A6XP">
+                        <field name="MOTOR">0</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="qdFL^l:z!{TV8/Y+}?]]">
+                            <field name="NUM">-200</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="kcbot_motor" id="Eyk+:WRZo%@#-k5Gy/-o">
+                            <field name="MOTOR">1</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="P1DBOs1uZ){[s^{N}E*1">
+                                <field name="NUM">-200</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

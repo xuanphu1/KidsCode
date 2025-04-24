@@ -1,0 +1,66 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="serial_setup" id="~YqTjy[!sHXPt^@XX==~" x="113" y="111">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="SPEED">9600</field>
+  </block>
+  <block type="serial_print" id="J4l:bqC5[Ah_tz1?z%Kz" x="118" y="143">
+    <field name="SERIAL_ID">Serial</field>
+    <field name="NEW_LINE">TRUE</field>
+    <value name="CONTENT">
+      <block type="text" id="om%+-S_=JYjUN_v{{-}*">
+        <field name="TEXT">a6</field>
+      </block>
+    </value>
+    <next>
+      <block type="serial_print" id="Zt6#8YYQG(?%(x8xj=ae">
+        <field name="SERIAL_ID">Serial</field>
+        <field name="NEW_LINE">TRUE</field>
+        <value name="CONTENT">
+          <block type="io_analogread" id="1NK7A*{X*,{?PbM{(nKd">
+            <field name="PIN">A6</field>
+          </block>
+        </value>
+        <next>
+          <block type="time_delay" id="]dpnx:y@ML}@[926=Nv[">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="J]_}{5,2Gojz!/`c7xL-">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="serial_print" id="u[L58~ayabnLsd7b=+ay">
+                <field name="SERIAL_ID">Serial</field>
+                <field name="NEW_LINE">TRUE</field>
+                <value name="CONTENT">
+                  <block type="text" id="j^fAY42eakN?|O6UQ.B)">
+                    <field name="TEXT">a7</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="serial_print" id="J}%I-`IoU2CMkqkvO{K_">
+                    <field name="SERIAL_ID">Serial</field>
+                    <field name="NEW_LINE">TRUE</field>
+                    <value name="CONTENT">
+                      <block type="io_analogread" id="ZwACthfv@N@D#*yQGB_A">
+                        <field name="PIN">A7</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="time_delay" id="?]o;e(55*W=!*lBVP~VV">
+                        <value name="DELAY_TIME_MILI">
+                          <block type="math_number" id="clkj|lN+K;B{.%n*z{dK">
+                            <field name="NUM">1000</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

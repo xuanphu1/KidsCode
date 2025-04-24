@@ -1,0 +1,5 @@
+board_manager:
+    additional_urls: []
+directories:
+  user: C:\Users\ADMIN\AppData\Local\Arduino15
+  libraries: C:\Users\ADMIN\AppData\Local\Arduino15\libraries

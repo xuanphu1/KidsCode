@@ -1,0 +1,106 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="Arduino_robot" id="_{2rUxSFVdeK(H~}Z#u0" x="123" y="131">
+    <next>
+      <block type="loop_forever" id="{g-Be05[i,K2AQg?Zd@~">
+        <statement name="DO">
+          <block type="io_digitalwrite" id="n|NGb.;Bd1yPFv14y|rI">
+            <field name="PIN">4</field>
+            <value name="STATE">
+              <block type="io_highlow" id="T^5ufCM,n3#Y#fk:pU-U">
+                <field name="STATE">HIGH</field>
+              </block>
+            </value>
+            <next>
+              <block type="io_digitalwrite" id="!1h9C6LhkGYqdu)p/pO0">
+                <field name="PIN">5</field>
+                <value name="STATE">
+                  <block type="io_highlow" id="*{;Mk1EGh-[qs-Md-p_}">
+                    <field name="STATE">LOW</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="io_digitalwrite" id="npCbp)Jh(E#-ZNv?~S?F">
+                    <field name="PIN">6</field>
+                    <value name="STATE">
+                      <block type="io_highlow" id="g`t.{=c^qWv5Wey(I[n1">
+                        <field name="STATE">HIGH</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="io_digitalwrite" id="z:=AQu7p@Vkv*W:QV8f[">
+                        <field name="PIN">7</field>
+                        <value name="STATE">
+                          <block type="io_highlow" id="c2sg{hbfQLcrXopgV,Xm">
+                            <field name="STATE">LOW</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="time_delay" id="?uKzmC}@zxv_L(isvSlJ">
+                            <value name="DELAY_TIME_MILI">
+                              <block type="math_number" id="!ChS4aiU(A5`6I,%~p4Z">
+                                <field name="NUM">3000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="io_digitalwrite" id="Dl/7!O`9?A}68E7.p1B^">
+                                <field name="PIN">4</field>
+                                <value name="STATE">
+                                  <block type="io_highlow" id="OXq??#kY?0)5DNFEh1YS">
+                                    <field name="STATE">HIGH</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="io_digitalwrite" id="ULdUJsNJ#!E!JQc#_(Xt">
+                                    <field name="PIN">5</field>
+                                    <value name="STATE">
+                                      <block type="io_highlow" id="HP,},57}IRD:ccR;x7.?">
+                                        <field name="STATE">LOW</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="io_digitalwrite" id="sd}He*;6NbjYBN%1`xFr">
+                                        <field name="PIN">6</field>
+                                        <value name="STATE">
+                                          <block type="io_highlow" id="pF*l2iCrqvCeQQua+n_I">
+                                            <field name="STATE">LOW</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="io_digitalwrite" id="Zg!:tQk9VampQqz7ZF+9">
+                                            <field name="PIN">7</field>
+                                            <value name="STATE">
+                                              <block type="io_highlow" id="~{pTbgnm3Cpi}JG5LdE2">
+                                                <field name="STATE">LOW</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="time_delay" id="T:FP-G/cB)iG)a6Nos/j">
+                                                <value name="DELAY_TIME_MILI">
+                                                  <block type="math_number" id="a*=P5xPZ7=[fzfIyY7be">
+                                                    <field name="NUM">3000</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>

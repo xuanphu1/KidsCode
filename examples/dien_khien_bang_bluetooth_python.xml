@@ -1,0 +1,208 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="5,vEDb0U!I]JdqRW4KMK" x="608" y="23">
+    <field name="NAME">control</field>
+    <comment pinned="false" h="80" w="160">Mô tả chức năng của hàm...</comment>
+    <statement name="STACK">
+      <block type="variables_str" id="`q!zGSvpJn7C~D;X4+J]">
+        <field name="VAR">buff</field>
+        <value name="VALUE">
+          <block type="bluetooth_read" id="aYVSLvTi+;+#bfxgQ6~C"></block>
+        </value>
+        <next>
+          <block type="controls_if" id="i!fj;[(DAlyT|_0m(H;8">
+            <value name="IF0">
+              <block type="logic_compare" id="PiBpqM_^XxWcWup)B^GV">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="text_length" id="ZMGvNbnG*Jj=/:qqB*K=">
+                    <value name="VALUE">
+                      <block type="variables_get" id="hoysb#dBI(wd@J6dF+i,">
+                        <field name="VAR">buff</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="Q=/gG_?vouBjE]/6XJ3u">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="controls_if" id="Wopi;s}l9:*F`v[1WA#M">
+                <value name="IF0">
+                  <block type="logic_compare" id="oHW6#~G~hyK]g(WHcboB">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="4[mhB1OsFQBQ}[fT1;h/">
+                        <field name="VAR">buff</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="S?!zC[xL=D}BmKSgF{#%">
+                        <field name="TEXT">F</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="Python_run_forward" id="JCZAcK1+Iz7s]a*(q4ZZ">
+                    <field name="MOTOR">1</field>
+                    <value name="SPEED">
+                      <block type="math_number" id="a*exr.P(QE#RC5Z[!n;d">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="Yi1+m6x+(zwIs59mj!0j">
+                    <value name="IF0">
+                      <block type="logic_compare" id="}%0e-*ZM,B/|X(0qX)U,">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="icU9VXx3U?/=*O4y|GP]">
+                            <field name="VAR">buff</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="=IFFQ{9|Tenh^PpAeFA#">
+                            <field name="TEXT">B</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="Python_run_forward" id="DMvRjP/0N;/wxqU~h+R+">
+                        <field name="MOTOR">4</field>
+                        <value name="SPEED">
+                          <block type="math_number" id="Z:K(6%X|T-tus(Hc3oL4">
+                            <field name="NUM">500</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="controls_if" id="o}rxZw*D@+fRP-Ao;%})">
+                        <value name="IF0">
+                          <block type="logic_compare" id=".Um%J!3}p}jX@`XHz5}+">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="variables_get" id="tCFqqFK(*KdQEr=b=%^6">
+                                <field name="VAR">buff</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="text" id=":aG5bmnXRyvm-m)/CzV)">
+                                <field name="TEXT">R</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="Python_run_forward" id="}Gt]#d#uy`7unw?N;K/p">
+                            <field name="MOTOR">2</field>
+                            <value name="SPEED">
+                              <block type="math_number" id="1KB3LmTHto64*Wj[qyKT">
+                                <field name="NUM">500</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="+V,(q4K,JvTP^QiE4vka">
+                            <value name="IF0">
+                              <block type="logic_compare" id="Kw@SK~9/qQt^iNoe|;nU">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="AUeR5,PU)-+(?S0-gxb#">
+                                    <field name="VAR">buff</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="O*J,M!F4g?Z5rx37FD.N">
+                                    <field name="TEXT">L</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="Python_run_forward" id="G9k4avaO`y4CTIfB3eZ-">
+                                <field name="MOTOR">3</field>
+                                <value name="SPEED">
+                                  <block type="math_number" id="~9G7=h_]:h[PN#v3w-C}">
+                                    <field name="NUM">500</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="?ao/|w2AzTQT@%?ng?un">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="xjQZZ;i5pz`#k{!):mpI">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="5^3~-CGA;2CCO5vAt`XQ">
+                                        <field name="VAR">buff</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="text" id="hd|}NUD0aJKD6Av?pp6z">
+                                        <field name="TEXT">S</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="Python_stop_moving" id="fzqNwWKKjT1jOo6yFyo)"></block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="bluetooth_setup" id="vc%`6]:;TEtL[+mGh?hj" x="116" y="63">
+    <value name="text">
+      <block type="text" id="O3;k~Pr2BWR.MD2#8;Zn">
+        <field name="TEXT">KC_bot_1</field>
+      </block>
+    </value>
+    <next>
+      <block type="Python_run_out_put" id="g)Nq2JF[gKlo3_;E4`^,">
+        <field name="Pinout">32</field>
+        <field name="muc">1</field>
+        <next>
+          <block type="time_delay" id="I(ge~!%6XTb5S~97Xj@=">
+            <value name="DELAY_TIME_MILI">
+              <block type="math_number" id="UWK-mMLprol:VmXi}4I6">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="Python_run_out_put" id="yIp8?-?f_19M|j@%xG8:">
+                <field name="Pinout">32</field>
+                <field name="muc">0</field>
+                <next>
+                  <block type="bluetooth_run" id="0*(aj1t9y=0^.rRl^Cb}">
+                    <field name="text">control</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
